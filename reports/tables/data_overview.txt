@@ -1,0 +1,48 @@
+健身房客流原始数据概览
+========================================
+数据文件：/Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/data/raw/健身房会员打卡.csv
+数据行数：62184
+数据列数：11
+
+字段名：
+number_people, date, timestamp, day_of_week, is_weekend, is_holiday, temperature, is_start_of_semester, is_during_semester, month, hour
+
+字段类型：
+number_people                         int64
+date                    datetime64[ns, UTC]
+timestamp                             int64
+day_of_week                           int64
+is_weekend                            int64
+is_holiday                            int64
+temperature                         float64
+is_start_of_semester                  int64
+is_during_semester                    int64
+month                                 int64
+hour                                  int64
+
+前 5 行数据：
+ number_people                      date  timestamp  day_of_week  is_weekend  is_holiday  temperature  is_start_of_semester  is_during_semester  month  hour
+            37 2015-08-15 00:00:11+00:00      61211            4           0           0        71.76                     0                   0      8    17
+            45 2015-08-15 00:20:14+00:00      62414            4           0           0        71.76                     0                   0      8    17
+            40 2015-08-15 00:30:15+00:00      63015            4           0           0        71.76                     0                   0      8    17
+            44 2015-08-15 00:40:16+00:00      63616            4           0           0        71.76                     0                   0      8    17
+            45 2015-08-15 00:50:17+00:00      64217            4           0           0        71.76                     0                   0      8    17
+
+缺失值统计：
+                      missing_count  missing_rate_percent
+number_people                     0                   0.0
+date                              0                   0.0
+timestamp                         0                   0.0
+day_of_week                       0                   0.0
+is_weekend                        0                   0.0
+is_holiday                        0                   0.0
+temperature                       0                   0.0
+is_start_of_semester              0                   0.0
+is_during_semester                0                   0.0
+month                             0                   0.0
+hour                              0                   0.0
+
+重复行数量：0
+
+时间字段识别与转换：
+date

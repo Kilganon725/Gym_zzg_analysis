@@ -1,0 +1,26 @@
+健身房客流探索性分析总结
+========================================
+分析样本量：62161 条
+客流字段：number_people
+客流均值：29.07
+客流中位数：28.00
+客流最大值：145.00
+客流最小值：0.00
+
+图表文件：
+- /Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/reports/figures/01_flow_time_series.png
+- /Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/reports/figures/02_hourly_average_flow.png
+- /Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/reports/figures/03_weekday_average_flow.png
+- /Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/reports/figures/04_workday_weekend_hourly_flow.png
+- /Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/reports/figures/05_weekday_hour_heatmap.png
+- /Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/reports/figures/06_flow_boxplot.png
+- /Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/reports/figures/07_temperature_flow_scatter.png
+
+主要结论：
+1. 客流时间序列折线图展示了健身房客流随时间连续波动的过程，可用于观察整体趋势、周期性和局部峰值。
+2. 每小时平均客流柱状图显示，平均客流最高的小时为 1 点，最低的小时为 10 点，说明客流存在明显日内节律。
+3. 星期平均客流柱状图显示，平均客流最高的是 周三，最低的是 周日，说明不同星期之间存在客流差异。
+4. 工作日平均客流为 31.38，周末平均客流为 23.18，工作日与周末的小时曲线可用于比较两类日期的高峰时段差异。
+5. 星期-小时热力图能同时展示周内和日内两个维度的客流强弱，颜色较深区域代表健身房使用高峰。
+6. 客流箱线图显示，上四分位数为 43.00，下四分位数为 9.00，按 1.5 倍 IQR 规则识别到约 355 条潜在异常高/低客流记录。
+7. 温度与客流散点图用于观察外部温度与健身房客流的关系，二者线性相关系数约为 0.373。

@@ -1,0 +1,31 @@
+健身房客流数据清洗日志
+========================================
+输入文件：/Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/data/raw/健身房会员打卡.csv
+输出文件：/Users/relphchris/Desktop/CodeX/zzg/Gym_zzg_analysis/data/processed/gym_flow_cleaned.csv
+
+数据量变化：
+清洗前：62184 行，11 列
+清洗后：62184 行，11 列
+减少行数：0
+
+处理步骤：
+1. 时间字段识别与转换：date
+2. 删除重复记录数量：0
+3. 缺失值填充前总数：0
+4. 缺失值填充后总数：0
+5. 客流字段识别结果：number_people
+6. 删除异常负数客流记录数量：0
+7. 时间排序依据：date
+
+清洗后字段类型：
+number_people                         int64
+date                    datetime64[ns, UTC]
+timestamp                             int64
+day_of_week                           int64
+is_weekend                            int64
+is_holiday                            int64
+temperature                         float64
+is_start_of_semester                  int64
+is_during_semester                    int64
+month                                 int64
+hour                                  int64
